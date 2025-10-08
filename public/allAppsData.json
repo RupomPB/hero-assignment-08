@@ -1,0 +1,219 @@
+
+[
+  {
+    "image": "/images/spotify.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 1,
+    "description": "Stream millions of songs, create playlists, and enjoy podcasts on the go.",
+    "size": 85,
+    "reviews": "21M",
+    "ratingAvg": 4.6,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 240000 },
+      { "name": "4 star", "count": 950000 },
+      { "name": "5 star", "count": 18000000 }
+    ]
+  },
+  {
+    "image": "/images/instagram.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "id": 2,
+    "description": "Capture and share the world's moments. Connect with friends and explore your interests.",
+    "size": 150,
+    "reviews": "43M",
+    "ratingAvg": 4.3,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 320000 },
+      { "name": "2 star", "count": 270000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 39500000 }
+    ]
+  },
+  {
+    "image": "/images/telegram.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 3,
+    "description": "Fast and secure messaging app that syncs across all your devices.",
+    "size": 60,
+    "reviews": "9.8M",
+    "ratingAvg": 4.7,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 8900000 }
+    ]
+  },
+  {
+    "image": "/images/twitter.png",
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "id": 4,
+    "description": "Join the conversation! Follow topics and people you care about on X.",
+    "size": 120,
+    "reviews": "25M",
+    "ratingAvg": 4.1,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 20000000 }
+    ]
+  },
+  {
+    "image": "/images/whatsapp.png",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms",
+    "id": 5,
+    "description": "Free, simple, and secure messaging and calling app available worldwide.",
+    "size": 95,
+    "reviews": "52M",
+    "ratingAvg": 4.5,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 48000000 }
+    ]
+  },
+  {
+    "image": "/images/snapchat.png",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 6,
+    "description": "Share moments instantly, chat with friends, and explore the world with lenses.",
+    "size": 145,
+    "reviews": "31M",
+    "ratingAvg": 4.2,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 450000 },
+      { "name": "2 star", "count": 380000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2600000 },
+      { "name": "5 star", "count": 27000000 }
+    ]
+  },
+  {
+    "image": "/images/tiktok.png",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "id": 7,
+    "description": "Create, watch, and share short-form videos that inspire creativity and joy.",
+    "size": 200,
+    "reviews": "58M",
+    "ratingAvg": 4.4,
+    "downloads": "3B",
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 52000000 }
+    ]
+  },
+  {
+    "image": "/images/youtube.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 8,
+    "description": "Watch, upload, and share videos from creators around the world.",
+    "size": 175,
+    "reviews": "100M",
+    "ratingAvg": 4.5,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 93000000 }
+    ]
+  },
+  {
+    "image": "/images/chrome.png",
+    "title": "Google Chrome",
+    "companyName": "Google LLC",
+    "id": 9,
+    "description": "Fast, secure, and easy-to-use web browser with syncing and extensions.",
+    "size": 110,
+    "reviews": "65M",
+    "ratingAvg": 4.2,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1400000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 57000000 }
+    ]
+  },
+  {
+    "image": "/images/netflix.png",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 10,
+    "description": "Watch TV shows, movies, and documentaries on demand from anywhere.",
+    "size": 180,
+    "reviews": "29M",
+    "ratingAvg": 4.5,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 26000000 }
+    ]
+  },
+  {
+    "image": "/images/capcut.png",
+    "title": "CapCut",
+    "companyName": "Bytedance Pte. Ltd.",
+    "id": 11,
+    "description": "All-in-one video editor with templates, transitions, and advanced filters.",
+    "size": 160,
+    "reviews": "15M",
+    "ratingAvg": 4.6,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 13400000 }
+    ]
+  },
+  {
+    "image": "/images/canva.png",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 12,
+    "description": "Design anything — social media posts, presentations, and videos easily.",
+    "size": 130,
+    "reviews": "12M",
+    "ratingAvg": 4.8,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 11000000 }
+    ]
+  }
+]
