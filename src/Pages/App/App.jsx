@@ -1,13 +1,15 @@
 import React from 'react';
 import review from '/review.png'
 import download from '/download.png'
+import { Link } from 'react-router';
 
 
 
 const App = ({singleApp}) => {
-    console.log(singleApp)
+    // console.log(singleApp)
     return (
-        <div className=''>
+        <Link to={`/appdetails/${singleApp.id}`}>
+            <div className=''>
 
         <div className=' p-4 h-100 space-y-3 shadow-xl rounded-2xl'>
             <div className='flex justify-center items-center p-2  border-1 border-gray-200 rounded-2xl'>
@@ -25,6 +27,7 @@ const App = ({singleApp}) => {
         
 
         </div>
+        </Link>
     );
 };
 
