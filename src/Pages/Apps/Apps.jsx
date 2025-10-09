@@ -20,7 +20,7 @@ const Apps = ({ data }) => {
         }
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {data.map((singleApp) => (
+          {data.slice(0,8).map((singleApp) => (
             <App singleApp={singleApp} key={singleApp.id}></App>
           ))}
         </div>

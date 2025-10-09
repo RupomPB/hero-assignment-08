@@ -10,7 +10,7 @@ const Navbar = () => {
   const links = <>
     <Link to='/' className='ml-5 font-bold'>Home</Link>
      <Link to='/apps' className='ml-5 font-bold'>Apps</Link>
-      <Link to='/installation' className='ml-5 font-bold'>Installation</Link>
+      <Link to='/installedapps' className='ml-5 font-bold'>Installation</Link>
   </>
 
     return (

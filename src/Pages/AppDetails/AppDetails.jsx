@@ -6,6 +6,7 @@ import review from '/review.png'
 import download from '/download.png'
 import totalreview from '/totalreview.png'
 import Recharts from '../Recharts/Recharts';
+import { addToInstalledDB } from '../../Utility/addToDB';
 const AppDetails = () => {
 
 
@@ -14,9 +15,16 @@ const AppDetails = () => {
 
     const data = useLoaderData();
     const singleApp = data.find(app =>app.id === appId);
-    console.log(singleApp)
+    // console.log(singleApp)
     
-    const {image, title, ratings, ratingAvg, downloads, description, reviews,companyName } =singleApp
+    const {image, title, ratings, ratingAvg, downloads, description, reviews,companyName, size } =singleApp;
+
+
+    const handleInstall = id =>{
+
+        
+        addToInstalledDB(id);
+    }
 
     return (
 
@@ -25,7 +33,7 @@ const AppDetails = () => {
 
         <div className=' max-w-7xl mx-auto flex gap-20 border-b-1 border-gray-300 my-10 pb-4'>
             <div>
-                <img src={image}></img>
+                <img className=' w-[250px]' src={image}></img>
             </div>
 
             <div className=' space-y-6'>
@@ -56,13 +64,20 @@ const AppDetails = () => {
 
                 </div>
 
+        {/* install button */}
                 <div>
-                    <button className=' bg-[#00d390] text-white py-2 px-5 btn'> Install Now </button>
+                    <button onClick={()=> handleInstall(id)} className=' bg-[#00d390] text-white py-2 px-5 btn'> Install Now ({size}MB) </button>
                 </div>
+
             </div>
         </div>
 
         <Recharts ratings={ratings}></Recharts>
+
+        <div className=' max-w-7xl mx-auto space-y-9 border-t-1 mt-10 border-gray-300'>
+            <h1 className=' font-bold text-4xl mt-10'>description</h1>
+            <p style={{lineHeight:'2em'}} className=' text-gray-400 font-semibold mb-10'>{description}</p>
+        </div>
         </div>
         
     );

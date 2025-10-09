@@ -2,6 +2,8 @@ import React from 'react';
 
 import review from '/review.png'
 import download from '/download.png'
+import { Line } from 'recharts';
+import { Link } from 'react-router';
 
 const AllApp = ({allapps}) => {
     // console.log(allapps)
@@ -9,6 +11,10 @@ const AllApp = ({allapps}) => {
     const {title,downloads, reviews, image } =allapps;
 
     return (
+
+        <Link  to={`/appdetails/${allapps.id}`}>
+
+
         <div>
            <div className=' p-4 h-100 space-y-3 shadow-xl rounded-2xl'>
                        <div className='flex justify-center items-center p-2  border-1 border-gray-200 rounded-2xl'>
@@ -23,6 +29,7 @@ const AllApp = ({allapps}) => {
                        </div>
                    </div>
         </div>
+        </Link>
     );
 };
 
