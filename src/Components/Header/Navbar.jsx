@@ -2,19 +2,23 @@ import React from 'react';
 
 import logoImg from '/logo.png'
 import github from '/github.png'
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 
 const Navbar = () => {
 
+  const classLinks =({isActive})=>
+    `ml-5 text-lg font-bold   ${isActive ? 'text-[#7942e4] border-b-1 border-[#7942e4]': 'text-black'}`
+  
+
   const links = <>
-    <Link to='/' className='ml-5 font-bold'>Home</Link>
-     <Link to='/apps' className='ml-5 font-bold'>Apps</Link>
-      <Link to='/installedapps' className='ml-5 font-bold'>Installation</Link>
+    <NavLink to='/' className={classLinks}>Home</NavLink>
+    <NavLink to='/apps' className={classLinks}>Apps</NavLink>
+    <NavLink to='/installedapps' className={classLinks}>Installation</NavLink>
   </>
 
     return (
-      <div className='bg-base-100 shadow-sm'>
+      <div className='bg-base-100 shadow-sm '>
 
         <div className="navbar    max-w-7xl mx-auto">
   <div className="navbar-start">
@@ -44,9 +48,11 @@ const Navbar = () => {
 
   <div className="navbar-end ">
   
-  <Link to='/github'>
+  <a href='https://github.com/RupomPB' target='blank'>
+
      <span className="btn bg-[#7c44e9]"><img src={github}></img> <p className=' text-white'>Contribute</p></span>
-  </Link>
+  
+  </a>
   </div>
 </div>
         

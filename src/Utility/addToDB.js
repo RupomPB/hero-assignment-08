@@ -1,3 +1,5 @@
+
+
 const getInstalledApp = () => {
   const installedSTR = localStorage.getItem("installList");
 
@@ -13,12 +15,13 @@ const addToInstalledDB = (id) => {
   const installedData = getInstalledApp();
 
   if (installedData.includes(id)) {
-    console.log("kireeee");
-    alert(" bhai installed hoise");
+   return false;
+    
   } else {
     installedData.push(id);
     const data = JSON.stringify(installedData);
-    localStorage.setItem('installList', data)
+    localStorage.setItem('installList', data);
+    return true;
   }
 };
 

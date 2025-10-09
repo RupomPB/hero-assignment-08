@@ -11,7 +11,7 @@ const App = ({singleApp}) => {
         <Link to={`/appdetails/${singleApp.id}`}>
             <div className=''>
 
-        <div className=' p-4 h-100 space-y-3 shadow-xl rounded-2xl'>
+        <div className=' p-4 h-100 space-y-3 shadow-lg rounded-2xl'>
             <div className='flex justify-center items-center p-2  border-1 border-gray-200 rounded-2xl'>
                 <img className='w-[250px] h-[250px] object-cover text-center' src={singleApp.image}></img>
             </div>

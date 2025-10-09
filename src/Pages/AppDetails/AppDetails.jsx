@@ -7,6 +7,7 @@ import download from '/download.png'
 import totalreview from '/totalreview.png'
 import Recharts from '../Recharts/Recharts';
 import { addToInstalledDB } from '../../Utility/addToDB';
+import { toast } from 'react-toastify';
 const AppDetails = () => {
 
 
@@ -22,8 +23,18 @@ const AppDetails = () => {
 
     const handleInstall = id =>{
 
+        const isInstalled = addToInstalledDB(id);
         
-        addToInstalledDB(id);
+        if(isInstalled){
+            toast.success('App successfully Install',{
+                autoClose: 2000
+            })
+        }
+        else{
+            toast.info("This app is already installed",{
+                autoClose: 2000,
+            })
+        }
     }
 
     return (
@@ -31,7 +42,7 @@ const AppDetails = () => {
         <div>
 
 
-        <div className=' max-w-7xl mx-auto flex gap-20 border-b-1 border-gray-300 my-10 pb-4'>
+        <div className=' max-w-7xl mx-auto flex md:flex flex-col items-center gap-20 border-b-1 border-gray-300 my-10 pb-4'>
             <div>
                 <img className=' w-[250px]' src={image}></img>
             </div>
@@ -65,7 +76,7 @@ const AppDetails = () => {
                 </div>
 
         {/* install button */}
-                <div>
+                <div className=''>
                     <button onClick={()=> handleInstall(id)} className=' bg-[#00d390] text-white py-2 px-5 btn'> Install Now ({size}MB) </button>
                 </div>
 
@@ -74,7 +85,7 @@ const AppDetails = () => {
 
         <Recharts ratings={ratings}></Recharts>
 
-        <div className=' max-w-7xl mx-auto space-y-9 border-t-1 mt-10 border-gray-300'>
+        <div className=' max-w-7xl mx-auto space-y-9 border-t-1 mt-10 border-gray-300 text-center md:text-left'>
             <h1 className=' font-bold text-4xl mt-10'>description</h1>
             <p style={{lineHeight:'2em'}} className=' text-gray-400 font-semibold mb-10'>{description}</p>
         </div>
