@@ -8,7 +8,7 @@ import { Link, NavLink } from 'react-router';
 const Navbar = () => {
 
   const classLinks =({isActive})=>
-    `ml-5 text-lg font-bold   ${isActive ? 'text-[#7942e4] border-b-1 border-[#7942e4]': 'text-black'}`
+    `ml-5 text-lg font-bold  ${isActive ? 'text-[#7942e4] border-b-1 border-[#7942e4]': 'text-black'}`
   
 
   const links = <>
@@ -33,9 +33,9 @@ const Navbar = () => {
       </ul>
     </div>
     <div className='flex items-center'>
-    <img className='w-10 h-10'  src={logoImg}></img>
+    <img className='w-10 h-10 m-2'  src={logoImg}></img>
         <Link to='/'>
-    <span className="btn btn-ghost text-xl font-bold  text-[#7c44e9]">HERO.IO</span>
+    <span className="  btn-ghost text-xl font-bold  text-[#7c44e9]">HERO.IO</span>
         </Link>
     </div>
   </div>

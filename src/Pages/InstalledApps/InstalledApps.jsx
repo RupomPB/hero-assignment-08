@@ -10,28 +10,28 @@ const InstalledApps = () => {
     const [sort, setSort] = useState('');
 
 
+
+  const convertedDownloads= (value) =>{
+    if(typeof value === "string"){
+      if(value.includes('B')) return parseFloat(value) * 1000000000;
+      if(value.includes('M')) return parseFloat(value)* 1000000;
+    }
+    return Number(value)
+  }
+
     const handleSort =(type)=>{
       setSort(type);
-      if(type ==="Size"){
-        const sortedBySize = [...installedList].sort((a,b)=>a.size - b.size);
+      if(type ==="Low-High"){
+        const sortedBySize = [...installedList].sort((a,b)=>convertedDownloads(a.downloads) - convertedDownloads(b.downloads));
+
         setInstalledList(sortedBySize);
       }
-      if(type ==="Ratings"){
-        const sortByRating =[...installedList].sort((a,b) =>{
-          const getNumber = (value) =>{
-            if( typeof value === 'string'){
-              if(value.includes('M'))return parseFloat(value) * 1000000;
-              if(value.includes('B'))return parseFloat(value )* 1000000000;
 
-              return parseFloat(value);
-            }
-            return value
-          }
-          return getNumber(a.reviews ) - getNumber(b.reviews)
-        });
-
-        setInstalledList(sortByRating);
+      if(type ==="High-Low"){
+        const sortedBySize = [...installedList].sort((a,b)=>convertedDownloads(b.downloads) - convertedDownloads(a.downloads));
+        setInstalledList(sortedBySize);
       }
+    
     }
 
     const [installedList, setInstalledList] =useState([])
@@ -79,8 +79,8 @@ const InstalledApps = () => {
           <details className="dropdown ">
   <summary className="btn m-1 text-lg">Sort by: {sort? sort: ''}</summary>
   <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-    <li><a onClick={()=>handleSort('Size')}>Size</a></li>
-    <li><a onClick={()=>handleSort('Ratings')}>Ratings</a></li>
+    <li><a onClick={()=>handleSort('Low-High')}>Low to High</a></li>
+    <li><a onClick={()=>handleSort('High-Low')}>High to Low</a></li>
   </ul>
 </details>
 

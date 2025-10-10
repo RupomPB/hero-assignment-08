@@ -1,16 +1,50 @@
-# React + Vite
+# 📱 Apps Store - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Description
 
-Currently, two official plugins are available:
+**App Store** is a React-based web application that showcases a list of apps with detailed descriptions, ratings, and installation features.  
+Users can:
+1. View detailed information about each app (description, reviews, downloads, etc.).
+2. Install and uninstall apps (saved in localStorage).
+3. Sort installed apps based on downloads.
+4. View charts displaying app rating distributions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project simulates a real app marketplace experience using React, Recharts, and localStorage for data persistence.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Technologies Used
 
-## Expanding the ESLint configuration
+###  Frontend
+- **React.js (Vite)** —> Component-based UI library  
+- **React Router** —> For dynamic routing  
+- **Tailwind CSS** —> For modern and responsive design  
+- **Recharts** —> For data visualization and rating charts  
+- **React Toastify** —> For smooth toast notifications  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+###  Data Handling
+- **LocalStorage (Custom Utility)** — Used to store installed apps locally  
+
+---
+
+
+---
+
+##  Features
+
+1. View app details with ratings and charts  
+2. Install/Uninstall apps (persistent in localStorage)  
+3. Sort installed apps by download count  
+4. Beautiful, responsive UI  
+5. Interactive data charts for app ratings  
+
+---
+
+🧑‍💻 Author
+
+Rupom PB
+Frontend Developer | React Enthusiast
+
+📧 Email: (rupombadhan111@gmail.com)
+🌐 GitHub: https://github.com/RupomPB
+

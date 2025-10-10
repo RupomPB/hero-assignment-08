@@ -25,11 +25,11 @@ const Banner = () => {
         <div className=" space-y-5 flex justify-center gap-3">
         <a href="https://play.google.com/store/games?device=windows" target="blank">
 
-            <button className="btn"><img src={playstore}></img> Google Play</button>
+            <button className="btn p-6 rounded-xl"><img src={playstore}></img> Google Play</button>
         </a>
         <a href="https://www.apple.com/app-store/" target="blank">
 
-            <button className="btn"> <img src={appstore}></img> App Store</button>
+            <button className="btn p-6 rounded-xl"> <img src={appstore}></img> App Store</button>
         </a>
 
         </div>
@@ -49,17 +49,17 @@ const Banner = () => {
 
 
         <div className="flex flex-row   lg:flex justify-around items-center  gap-5 py-4 pb-10  max-w-7xl mx-auto">
-            <div className=" space-y-2 ">
+            <div className=" space-y-2 text-center">
               <p className=" text-sm text-gray-200">Total Downloads</p>
               <h1 className=" text-5xl font-bold text-white">29.6M</h1>  
               <p className=" text-sm text-gray-200">21% more than last month</p>
             </div>
-              <div className=" space-y-2">
+              <div className=" space-y-2 text-center">
               <p className=" text-sm text-gray-200">Total Reviews</p>
               <h1 className=" text-5xl font-bold text-white">906K</h1>  
               <p className=" text-sm text-gray-200">46% more than last month</p>
             </div>
-             <div className=" space-y-2">
+             <div className=" space-y-2 text-center">
               <p className=" text-sm text-gray-200">Active Apps</p>
               <h1 className=" text-5xl font-bold text-white">132+</h1>  
               <p className=" text-sm text-gray-200">31 more will Launch</p>

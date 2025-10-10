@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 
 
@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 const AppDetails = () => {
 
 
+    const [isInstalled, setIsInstalled] =useState(false)
     const {id} = useParams();
     const appId = parseInt(id);
 
@@ -29,11 +30,14 @@ const AppDetails = () => {
             toast.success('App successfully Install',{
                 autoClose: 2000
             })
+            setIsInstalled(true)
         }
         else{
             toast.info("This app is already installed",{
                 autoClose: 2000,
-            })
+            });
+            
+           
         }
     }
 
@@ -42,7 +46,7 @@ const AppDetails = () => {
         <div>
 
 
-        <div className=' max-w-7xl mx-auto flex md:flex flex-col items-center gap-20 border-b-1 border-gray-300 my-10 pb-4'>
+        <div className=' max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20 border-b-1 border-gray-300 my-10 pb-4'>
             <div>
                 <img className=' w-[250px]' src={image}></img>
             </div>
@@ -50,7 +54,7 @@ const AppDetails = () => {
             <div className=' space-y-6'>
                 <div className=' border-b-1 border-gray-300 pb-4'>
                     <h1 className='text-2xl font-bold text-center'>{title}</h1>
-                <p className=' text-lg font-semibold text-center'>Developed by: {companyName}</p>
+                <p className=' text-lg font-semibold text-center'>Developed by: <span className=' text-[#7c44e9]'>{companyName}</span></p>
                 </div>
 
                 <div className='flex justify-between gap-22'>
@@ -77,7 +81,7 @@ const AppDetails = () => {
 
         {/* install button */}
                 <div className=''>
-                    <button onClick={()=> handleInstall(id)} className=' bg-[#00d390] text-white py-2 px-5 btn'> Install Now ({size}MB) </button>
+                    <button disabled={isInstalled} onClick={()=> handleInstall(id)} className=' bg-[#00d390] text-white py-2 px-5 btn'> {isInstalled ? 'Installed': 'Install Now'} ({size}MB) </button>
                 </div>
 
             </div>
