@@ -42,7 +42,7 @@ The project simulates a real app marketplace experience using React, Recharts, a
 
 ## Author
 
-Rupom PB
+# Rupom PB
 Frontend Developer | React Enthusiast
 
 📧 Email: (rupombadhan111@gmail.com)
