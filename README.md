@@ -40,7 +40,7 @@ The project simulates a real app marketplace experience using React, Recharts, a
 
 ---
 
-🧑‍💻 Author
+## Author
 
 Rupom PB
 Frontend Developer | React Enthusiast
