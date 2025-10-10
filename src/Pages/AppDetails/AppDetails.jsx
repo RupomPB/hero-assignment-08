@@ -14,6 +14,10 @@ const AppDetails = () => {
     const [isInstalled, setIsInstalled] =useState(false)
     const {id} = useParams();
     const appId = parseInt(id);
+    const installedfromLS = localStorage.getItem("installList");
+    
+
+
 
     const data = useLoaderData();
     const singleApp = data.find(app =>app.id === appId);
@@ -81,7 +85,7 @@ const AppDetails = () => {
 
         {/* install button */}
                 <div className=''>
-                    <button disabled={isInstalled} onClick={()=> handleInstall(id)} className=' bg-[#00d390] text-white py-2 px-5 btn'> {isInstalled ? 'Installed': 'Install Now'} ({size}MB) </button>
+                    <button disabled={isInstalled || installedfromLS?.includes(id)} onClick={()=> handleInstall(id)} className=' bg-[#00d390] text-white py-2 px-5 btn'> {isInstalled || installedfromLS?.includes(id) ? 'Installed': 'Install Now'} ({size}MB) </button>
                 </div>
 
             </div>

@@ -18,13 +18,13 @@ const AllApps = () => {
 
     return (
         <div className=' max-w-7xl mx-auto'>
-            <h1 className="text-center font-bold text-5xl my-5">Our All Applications</h1>
+            <h1 className="text-center font-bold md:text-5xl my-5 ">Our All Applications</h1>
             <p className="text-center">Explore All Apps on the Market developed by us. We code for Millions</p>
-        <div className='flex  justify-between'>
-            <h1 className=' font-bold text-xl'>({allAppsData.length}) Apps Found</h1>
+        <div className='flex  justify-between  m-2 '>
+            <h1 className=' font-bold md:text-xl'>({allAppsData.length}) Apps Found</h1>
             {/* search apps  */}
 
-            <input className='border-1 rounded-xl px-3 py-1' type='text' placeholder='Search Apps' value={searchApp} onChange={(e)=>setSearchApp(e.target.value)}></input>
+            <input className='border-1 border-gray-300 rounded-xl py-1 md:px-3 md:py-1' type='text' placeholder='Search Apps' value={searchApp} onChange={(e)=>setSearchApp(e.target.value)}></input>
 
         </div>
             <Suspense fallback={
@@ -35,7 +35,7 @@ const AllApps = () => {
         }>
                 {
                     filterApps.length > 0 ?(
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10'>
                     {
                         filterApps.map((allapps)=><AllApp allapps={allapps} key={allapps.id}></AllApp>)
                     }
